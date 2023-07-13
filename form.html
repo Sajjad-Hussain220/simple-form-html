@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Mulish', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+            color: black;
+ 
+        }
+
+        .form_con {
+            color: white;
+            margin-left: 100px;
+            border-radius: 25px;
+            margin-right: 100px;
+        background-color: black;
+        }
+
+        .label_set {
+            margin-left: 80px;
+            margin-right: 50px;
+        }
+
+        .input_set {
+            border-radius: 6PX;
+            border: 0px;
+        }
+
+        .more_info {
+            font-size: 10px;
+            margin-left: 10px;
+        }
+
+        .select_set {
+            margin-left: -10px;
+            border-radius: 6px;
+            border: 0px;
+            background-color: white;
+        }
+
+        .email {
+            margin-left: 40px;
+        }
+
+        .Number {
+            margin-left: 22px;
+        }
+
+        .radiof {
+            margin-left: 50px;
+        }
+
+        .radiom {
+            margin-left: 20px;
+        }
+
+        .text_area {
+            margin-top: -15px;
+            margin-left: 222px;
+
+        }
+
+        .city {
+            margin-left: 50px;
+        }
+
+        .pin {
+            margin-left: 13px;
+        }
+
+        .state {
+            margin-left: 40px
+        }
+
+        .country {
+            margin-left: 20px
+        }
+
+        .hobbies {
+            margin-left: 20px;
+        }
+
+        .hobbies1 {
+            margin-top: 10px;
+            margin-left: 300px;
+        }
+
+        .qualification {
+        
+            border: 1px;
+            width: 1000px;
+            margin: auto;
+      
+        }
+
+        .table_center {
+            text-align: center;
+        }
+
+        .radioBCA {
+            margin-left: -3px;
+        }
+        button
+        {
+            border-radius: 6px;
+            border: 0px;
+            background-color: white;
+            width: 100px;
+            height: 25px;
+            font-weight: bold;
+        }
+      
+        
+    </style>
+</head>
+
+<body>
+    <h2>STUDENT REGISTRATION FORM</h2>
+    <hr size="5" color="black" style="margin-top: -25px; width: 450px;">
+    <br>
+    <div class="form_con">
+        <form>
+            <br>
+            <label class="label_set" for="first_name">First Name :</label>
+            <input class="input_set" id="first_name" type="text" maxlength="30" size="30" required><sub
+                class="more_info">(max 30
+                characters a-z and A-Z)</sub>
+            <br>
+            <br>
+            <label class="label_set" for="last_name">Last Name :</label>
+            <input class="input_set" id="last_name" type="text" maxlength="30" size="30" required><sub
+                class="more_info">(max 30 characters
+                a-z and A-Z)</sub>
+            <br>
+            <br>
+            <label class="label_set">Date of Birth :</label>
+            <select name="dob" class="select_set">
+                <option value="Date">Date</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>&ensp;
+            <select name="Month" class="select_set">
+                <option value="Month">Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12"> December</option>
+            </select>&ensp;
+            <select name="year" class="select_set">
+                <option value="year">year</option>
+                <option value="1">1999</option>
+                <option value="2">2000</option>
+                <option value="3">2001</option>
+                <option value="4">2002</option>
+                <option value="5">2003</option>
+                <option value="6">2004</option>
+                <option value="7">2005</option>
+                <option value="8">2006</option>
+                <option value="9">2007</option>
+                <option value="10">2008</option>
+                <option value="11">2009</option>
+                <option value="12">2010</option>
+            </select>
+            <br>
+            <br>
+            <label class="label_set" for="Email">Email :</label>
+            <input class="input_set email" id="Email" type="text" size="30" required>
+            <br>
+            <br>
+            <label class="label_set" for="Number">Number :</label>
+            <input class="input_set Number" id="Number" type="text" maxlength="10" size="30" required><sub
+                class="more_info">(10 digit Number)</sub>
+            <br>
+            <br>
+            <label class="label_set">Gender :</label>
+            <input class="radiof" id="female" type="radio" name="Gender">
+            <label for="female">Female</label>
+            <input class="radiom" id="male" type="radio" name="Gender">
+            <label for="male">Male</label>
+            <br>
+            <br>
+            <label for="textarea" class="label_set">Address :</label>
+            <br>
+            <textarea class="input_set text_area" id="textarea" cols="26"></textarea>
+            <br>
+            <br>
+            <label class="label_set" for="City">City :</label>
+            <input class="input_set city" id="City" type="text" maxlength="30" size="30" required>
+            <sub class="more_info">(max 30 characters a-z and A-Z)</sub>
+            <br>
+            <br>
+            <label class="label_set" for="pin">Pin Code :</label>
+            <input class="input_set pin" id="pin" type="text" maxlength="30" size="30" required>
+            <sub class="more_info">(6 digit Number)</sub>
+            <br>
+            <br>
+            <label class="label_set" for="State">State :</label>
+            <input class="input_set state" id="State" type="text" maxlength="30" size="30" required>
+            <sub class="more_info">(max 30 characters a-z and A-Z)</sub>
+            <br>
+            <br>
+            <label class="label_set" for="Country">Country :</label>
+            <input class="input_set country" id="Country" type="text" maxlength="30" size="30" required>
+            <sub class="more_info">(max 30 characters a-z and A-Z)</sub>
+            <br>
+            <br>
+            <label class="label_set">Hobbies :</label>
+            <input class="hobbies" type="checkbox" name="Hobbies">Drawing
+            <input class="hobbies" type="checkbox" name="Hobbies">Singing
+            <input class="hobbies" type="checkbox" name="Hobbies">Dancing
+            <input class="hobbies" type="checkbox" name="Hobbies">Sketching<br>
+            <input class="hobbies1" type="checkbox" name="Hobbies">others
+            <input class="input_set hobbies" type="text">
+            <br>
+            <br>
+            <table cellspacing="0" class="qualification label_set">
+                <tr>
+                    <th colspan="5" style="font-size: 30px;">
+                        QUALIFICATION
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>S.NO</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing </th>
+                </tr>
+
+
+                <tr class="table_center">
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                </tr>
+                <tr class="table_center">
+                    <td>2</td>
+                    <td>Class Xll</td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                </tr>
+                <tr class="table_center">
+                    <td>3</td>
+                    <td>Graduction</td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                </tr>
+                <tr class="table_center">
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                    <td><input type="text" class="input_set" size="25px"></td>
+                </tr>
+                <tr class="table_center">
+                    <td></td>
+                    <td></td>
+                    <td><sup  class="more_info">(10 Char max)</sub></td>
+                    <td><sup  class="more_info">(Upto 2 decimal)</sup></td>
+                </tr>
+            </table>
+
+            <br>
+            <label class="label_set">Courses</label>
+            <br>
+            <label class="label_set">Applied For :</label>
+            <input class="radioBCA" id="female" type="radio" name="Gender">
+            <label for="female">BSSE</label>
+            <input class="radiom" id="male" type="radio" name="Gender">
+            <label for="male">B.COM</label>
+            <input class="radiom" id="male" type="radio" name="Gender">
+            <label for="male">BSCS</label>
+            <input class="radiom" id="male" type="radio" name="Gender">
+            <label for="male">BBA</label>
+            <BR>
+            <BR>
+            <button  style=" margin-left :458px ; ">Submit</button>
+            <button>Restart</button>
+            <BR>
+                <BR>
+        </div>
+        </form>
+
+    </div>
+</body>
+
+</html>
